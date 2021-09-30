@@ -1,0 +1,28 @@
+{
+  "name": "jispa",
+  "version": "1.0.0",
+  "description": "Easy GUI dynamic API's and website creation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/himanshu7569/jispa.git"
+  },
+  "keywords": [
+    "GUI",
+    "API",
+    "Website"
+  ],
+  "author": "Himanshu Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/himanshu7569/jispa/issues"
+  },
+  "homepage": "https://github.com/himanshu7569/jispa#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.8"
+  }
+}

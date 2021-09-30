@@ -1,0 +1,5 @@
+class Jispa {
+
+    // Constructor
+    constructor() {}
+}
