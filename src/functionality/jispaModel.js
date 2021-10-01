@@ -39,6 +39,10 @@ class JispaModel {
         await this.#createModel()
     }
 
+    getName() {
+        return this.#name
+    }
+
     // Create Schema ___________________
     async #createSchema() {
         this.#schema = new mongoose.Schema(this.#schemaValues, this.#schemaOption)
@@ -67,19 +71,31 @@ class JispaModel {
     // CRUD Operations ___________________
 
     // Create Single Record
-    #createDoc() {}
+    #createDoc(req, res) {
+        const data = req.body
+        this.#model.create(data)
+        res.json("We can do it")
+    }
 
     // Get Multiple Records
-    #getDocs() {}
+    #getDocs(req, res) {
+
+    }
 
     // Read Single Record
-    #readDoc() {}
+    #readDoc(req, res) {
+
+    }
 
     // Update Single Record
-    #updateDoc() {}
+    #updateDoc(req, res) {
+
+    }
 
     // Delete Single Record
-    #deleteDoc() {}
+    #deleteDoc(req, res) {
+
+    }
 
     // Pagination ___________________
     #pagination
