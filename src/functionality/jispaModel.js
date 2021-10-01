@@ -2,13 +2,16 @@ const mongoose = require('mongoose')
 const express = require('express')
 
 /**
+ * 
  * Created by : Himanshu Sharma
  * 
  * Defaults : 
  *      Pagination : true
- *      Date : 30 Sep 2021 
+ * 
+ * Date : 30 Sep 2021 
  * 
  */
+
 class JispaModel {
     // Member Variables ___________________
     #router = null
@@ -48,7 +51,7 @@ class JispaModel {
 
     // Routings ___________________
     async getRouter() {
-        // Create
+        // Creates
         this.#router.post('/', this.#createDoc)
         // Get all records
         this.#router.get('/', this.#getDocs)
